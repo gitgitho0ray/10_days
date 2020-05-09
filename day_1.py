@@ -27,10 +27,16 @@ for i in list(mode.items()):
         mode_list.append(i[0])
 print(mode_list[0])
 
-
 #weighted mean
-n=int(input())
-nums=[int(i) for i in list(input().split())]
-w=[int(i) for i in list(input().split())]
+n=10
+nums='10 40 30 50 20 10 40 30 50 20'.split()
+w='1 2 3 4 5 6 7 8 9 10'.split()
+
+#hacker rank inputs
+# n=int(input())
+# nums=[int(i) for i in list(input().split())]
+# w=[int(i) for i in list(input().split())]
+
+
 wmean=sum([n*w for n,w in zip(nums,w)])/sum(w)
 print("{:.1f}".format(wmean))
